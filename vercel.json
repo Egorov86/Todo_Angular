@@ -1,8 +1,5 @@
 {
   "version": 2,
-  "installs": [
-    "@vercel/npm"
-  ],
   "installCommand": "npm ci",
   "buildCommand": "ng build",
   "outputDirectory": "dist/PV_318_Angular"
