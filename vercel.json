@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "**/*.ts",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/npm"
+    }
+  ],
+  "installCommand": "npm install && npm install -g @angular/cli",
+  "buildCommand": "ng build --prod"
+}
