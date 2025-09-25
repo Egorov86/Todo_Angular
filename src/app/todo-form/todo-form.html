@@ -1,0 +1,5 @@
+<form (submit)="handleSubmit($event)">
+  <label for="task-input">Новая задача:</label>
+  <input id="task-input" name="task-input" [(ngModel)]="inputValue"/> <!-- Добавлен атрибут name -->
+  <button type="submit">Добавить</button>
+</form>

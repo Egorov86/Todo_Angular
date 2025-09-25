@@ -1,0 +1,9 @@
+<div *ngIf="tasks.length === 0">Нет задач.</div>
+<ul *ngIf="tasks.length > 0">
+  <li *ngFor="let task of tasks; let i=index">
+    <app-todo-item [task]="task"/>
+    <button (click)="deleteTask(i)">Удалить</button>
+  </li>
+</ul>
+
+<app-todo-form (onAdd)="addTask($event)"></app-todo-form>
